@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <table ng-controller="MultiplicationCtrl">
-        <tr ng-repeat="numberA in numbers">
-            <td ng-repeat="numberB in numbers">
+    <table ng-controller="MultiplicationCtrl" initial-number-limit="10">
+        <tr ng-repeat="numberA in numbers()">
+            <td ng-repeat="numberB in numbers()">
                 {{ numberA * numberB }}
             </td>
         </tr>
