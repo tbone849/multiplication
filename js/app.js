@@ -9,4 +9,8 @@ angular.module('myApp', [])
             };
             return numbers;
         };
+
+        $scope.compute = function(a,b) {
+        	return a * b;
+    	};
     });
